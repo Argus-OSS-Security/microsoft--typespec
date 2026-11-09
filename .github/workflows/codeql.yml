@@ -1,13 +1,14 @@
 name: "CodeQL"
 
-on:
-  push:
-    branches: ["main", "release/*"]
-  pull_request:
-    branches: ["main", "release/*"]
-  schedule:
-    - cron: "30 3 * * 3"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: ["main", "release/*"]
+#   pull_request:
+#     branches: ["main", "release/*"]
+#   schedule:
+#     - cron: "30 3 * * 3"
+# 
 permissions:
   contents: read
 

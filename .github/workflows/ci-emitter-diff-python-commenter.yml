@@ -2,12 +2,13 @@ name: "python / emitter diff commenter"
 
 # The artifact is untrusted data. Never check out, build, or execute PR code here.
 # Resolve the PR from trusted workflow_run metadata, not artifact fields.
-on:
-  workflow_run:
-    workflows: ["python / emitter diff"]
-    types:
-      - completed
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_run:
+#     workflows: ["python / emitter diff"]
+#     types:
+#       - completed
+# 
 permissions:
   actions: read
   pull-requests: write

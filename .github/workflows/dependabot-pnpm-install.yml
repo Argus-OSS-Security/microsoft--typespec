@@ -1,14 +1,15 @@
 name: Dependabot pnpm install
 
-on:
-  pull_request:
-    branches: ["main"]
-    types: [opened]
-    paths:
-      - "**/package.json"
-      - "pnpm-lock.yaml"
-      - "pnpm-workspace.yaml"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches: ["main"]
+#     types: [opened]
+#     paths:
+#       - "**/package.json"
+#       - "pnpm-lock.yaml"
+#       - "pnpm-workspace.yaml"
+# 
 permissions: {}
 
 jobs:

@@ -1,13 +1,14 @@
 name: Preview
 
-on:
-  pull_request:
-    branches:
-      - main
-      - release/*
-    paths-ignore:
-      - "website/**"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#       - release/*
+#     paths-ignore:
+#       - "website/**"
+# 
 permissions:
   contents: read
 

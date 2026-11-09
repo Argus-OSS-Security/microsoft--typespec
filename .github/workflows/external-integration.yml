@@ -1,15 +1,16 @@
 name: Integration
 
-on:
-  pull_request:
-    branches: ["main"]
-    paths-ignore:
-      - "packages/http-client-csharp/**"
-      - "packages/http-client-java/**"
-      - "packages/http-client-python/**"
-      - "website/**"
-      - "docs/**"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches: ["main"]
+#     paths-ignore:
+#       - "packages/http-client-csharp/**"
+#       - "packages/http-client-java/**"
+#       - "packages/http-client-python/**"
+#       - "website/**"
+#       - "docs/**"
+# 
 permissions:
   contents: read
 

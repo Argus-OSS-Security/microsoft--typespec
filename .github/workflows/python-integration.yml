@@ -1,12 +1,13 @@
 name: Python Integration
 
-on:
-  pull_request:
-    branches: ["main"]
-    paths:
-      - "packages/http-client-python/**"
-      - ".github/workflows/python-integration.yml"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches: ["main"]
+#     paths:
+#       - "packages/http-client-python/**"
+#       - ".github/workflows/python-integration.yml"
+# 
 permissions:
   contents: read
 

@@ -57,22 +57,23 @@
 #   - ghcr.io/github/github-mcp-server:v1.11.0@sha256:fbec75de11c255213fa08d80fb166abe73d851fff631c51c0079872967720699
 
 name: "Agentic Triage"
-on:
-  issues:
-    types:
-      - opened
-  # roles: all # Roles processed as role check in pre-activation job
-  workflow_dispatch:
-    inputs:
-      aw_context:
-        default: ""
-        description: "Agent caller context (used internally by Agentic Workflows)."
-        required: false
-        type: string
-      issue-number:
-        description: Issue number to triage
-        required: true
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issues:
+#     types:
+#       - opened
+#   # roles: all # Roles processed as role check in pre-activation job
+#   workflow_dispatch:
+#     inputs:
+#       aw_context:
+#         default: ""
+#         description: "Agent caller context (used internally by Agentic Workflows)."
+#         required: false
+#         type: string
+#       issue-number:
+#         description: Issue number to triage
+#         required: true
+# 
 permissions: {}
 
 concurrency:

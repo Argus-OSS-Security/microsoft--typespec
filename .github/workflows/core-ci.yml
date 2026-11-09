@@ -3,10 +3,11 @@ name: Core CI
 permissions:
   contents: read
 
-on:
-  workflow_call:
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_call:
+#   workflow_dispatch:
+# 
 jobs:
   build:
     name: Build (${{ matrix.os }}, Node ${{ matrix.node-version }})

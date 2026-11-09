@@ -1,11 +1,12 @@
 name: Make Change Comment
 
-on:
-  workflow_run:
-    workflows: ["Consistency"]
-    types:
-      - completed
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_run:
+#     workflows: ["Consistency"]
+#     types:
+#       - completed
+# 
 permissions:
   pull-requests: write
 
